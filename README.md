@@ -1,2 +1,2 @@
-# cr-che_website_js_css
+# creche_website_js_css
 Site web pour une crèche en utilisant html css et javscript
