@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crèche</title>
+    <!-- costom links  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+ 
+        <!----->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media_queries.css">
+    <link rel="stylesheet" href="./assets/css/animation.css">
+    <link rel="stylesheet" href="./assets/css/variable.css">
+    <!-- font links -->
+    <link rel="preconnect" href="https://fonts.google.com">
+    <link rel="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;800;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+      <style>
+        #last{
+width: 100%;
+height: auto;
+justify-content: center;
+/* background-color: #ffb3b3; */
+background: radial-gradient(ellipse at center, hsla(15, 100%, 55%, 0.3), transparent 70%);
+}
+.full{
+width: 80%;
+display: inline-block;
+margin:2%;
+margin-left: 10%;
+text-align: center;
+background-color: rgb(0 123 255 / 9%);
+color: white;
+/* border:15px solid var(--red-orange-color-wheel); */
+border-radius: 5px;
+margin-bottom: 8%;
+margin-top: 8%;
+}
+.full h3{
+font-size: 2rem;
+display:block;
+margin: 2%;
+margin-bottom: 0;
+}
+.lt{
+padding: 2%;
+margin: 2%;
+}
+.rt{
+padding: 2%;
+margin: 2%;
+}
+.lt textarea{
+width: 94%;
+margin-left: 2.8%;
+}
+button{
+margin: 2%;
+}
+/* .btn-primary{
+background-color: black;
+border: 2px solid white;
+border-radius: 5%;
+} */
+.btn {
+  padding: 4px 50px;
+}
+.btn-secondary:hover {
+    color: #fff;
+    background-color: rgb(0 123 255 / 6%);
+    border-color: rgb(0 123 255 / 6%);
+}
+.list-item{
+margin-bottom: 2%;
+list-style-type: none;
+}
+.list-item span{
+margin-left: 10px;
+font-size: 1.4rem;
+}
+.list-item a{
+color: white;
+display: inline-block;
+}
+.list-item a:hover{
+text-decoration: underline;
+}
+.form-control{
+background-color: #f8f9fa;
+border: 4px #ced4da;
+}
+     
+@media screen and (min-width: 770px){
+.full{
+    width: 70%;
+    margin-left: 15%;
+}
+.lt textarea{
+width: 95%;
+margin-left: 2.4%;
+}
+
+.maps{
+  border:0;
+  margin-top: -60px;
+}
+}
+     
+@media screen and (min-width: 1100px){
+.full{
+    width: 65%;
+    margin-left: 17%;
+    margin-top: 5%;
+}
+.lt{
+    width: 55%;
+    display: inline-block;
+    float: left;
+    margin-right: 0;
+}
+.rt{
+    width: 35%;
+    display: inline-block;
+    margin-left: 0;
+}
+.list-item{
+margin-bottom: 10%;
+}
+.contact-list{
+    margin-top: 22%;
+    padding-right: 8%;
+}
+.fa-envelope, .gmail{
+    display: inline-block;
+    width: auto;
+}
+}
+
+.sendin_btn{
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.send-text{
+  margin-right: 10px;
+}
+
+.fa{
+  display: inline-flex;
+}
+      </style>
+
+  </head>
+
+<body>
+<section id="last">
+      <!-- heading -->
+      <div class="full">
+        <h3>Contactez nous</h3>
+ 
+        <div class="lt">
+ 
+          <!-- form starting  -->
+         
+          <form class="form-horizontal" method="post" action="contact.php">
+            <div class="form-group">
+              <div class="col-sm-12">
+                <!-- name  -->
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Entrer votre nom"
+                  name="name"
+                  value=""
+                />
+              </div>
+            </div>
+ 
+            <div class="form-group">
+              <div class="col-sm-12">
+                <!-- email  -->
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Entrer votre adresse mail"
+                  name="email"
+                  value=""
+                />
+              </div>
+            </div>
+ 
+            <!-- message  -->
+            <textarea
+              class="form-control"
+              rows="10"
+              placeholder="Entrer votre message"
+              name="message">
+            </textarea>
+ 
+            <button
+              class="btn btn-secondary send-button"
+              id="submit"
+              type="submit"
+              value="SEND">
+              <div class="sendin_btn">
+                <span class="send-text">Envoyer</span>
+                <i class="fa fa-paper-plane"></i>
+            </div>
+            </button>
+          </form>
+          <!-- end of form -->
+        </div>
+ 
+        <!-- Contact information --> 
+        <div class="rt">
+          <ul class="contact-list">
+            <li class="list-item">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12958.516059386226!2d-0.624858!3d35.7107459!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6afec9911454fa57!2sCr%C3%A8che%20les%20minions!5e0!3m2!1sfr!2sdz!4v1657905482272!5m2!1sfr!2sdz" width="260" height="200" class="maps" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <i class="fa fa-map-marker fa-1x">
+                <span class="contact-text place">
+                  Tour A, Route des falaises Mobilart, Oran 31000
+                </span>
+             </i>
+            </li>
+ 
+            <li class="list-item">
+              <i class="fa fa-envelope fa-1x">
+                <span class="contact-text gmail">
+                  <a href="mailto:yourmail@gmail.com" title="Send me an email">
+                    email@gmail.com</a>
+                </span>
+              </i>
+            </li>
+ 
+            <li class="list-item">
+              <i class="fa fa-phone fa-1x">
+                <span class="contact-text phone">
+                  0555404555
+                </span>
+              </i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+</body>
+</html>
